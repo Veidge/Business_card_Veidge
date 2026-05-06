@@ -1,0 +1,13 @@
+header {
+    display: block;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 24pt;
+}
