@@ -8,16 +8,42 @@
         <link rel="stylesheet" href="static/styles/animations.css"> 
     </head>
     <!-- Навбар, ориентиры с ссылками -->
+
     <header>
-        <a>Главная</a>
-        <a>Портфолио</a>
-        <a>Контакты</a>
+        <div class="navbar">
+            <div class="riseup">
+                <!-- <a href="#top"> <img src="static/pictures/logo.png" alt="Логотип"> </a>                     -->
+                <!-- <div class="riseup-logo">
+                    <a href="#top"><img src="static/pictures/logo_text.png" alt="Логотип"></a>
+                </div> -->
+            </div>
+            <div class="drop">
+                <div class="nav-list">
+                    <nav>
+                        <a href="#main_id">Главная</a>
+                        <a href="#projects_id">Портфолио</a>
+                        <a href="#contacts_id">Контакты</a>
+                    </nav>
+                </div>
+                <button class="nav-btn">&#9776;</button>
+            </div>
+        </div>
     </header>
+
+    <!-- <header>
+        <div class="navbar">
+            <nav>
+                <a href="#main_id">Главная</a>
+                <a href="#projects_id">Портфолио</a>
+                <a href="#contacts_id">Контакты</a>
+            </nav>
+        </div>
+    </header> -->
 
     <body>
         <!-- Заголовок -->
         <div class="main_head">
-            <h1>VEIDGE SILES 'DE SHADOWS'</h1>
+            <h1 id="main_id">VEIDGE SILES 'DE SHADOWS'</h1>
             <h3>тихий обыватель здешних теней и хаосов</h3>
         </div>
 
@@ -39,7 +65,7 @@
         </div>
         
         <!-- Проекты (текущие отдельно выделить, после самые основные) -->
-         <h2>Портфолио</h2>
+        <h2 id="projects_id">Портфолио</h2>
         <div class="projects">
             <h3>Текущие проекты</h3>
             <div class="nows">
@@ -48,6 +74,7 @@
             <!-- Для каждого нужно небольшую карточку сделать -->
             <div class="pasts">
                 <h3>Завершённые проекты</h3>
+                <p>Мобильное приложение "Фильмы" (вне GitHub)</p>
                 <p>Сайт для огранизаций ООО "Асандра" и ООО "Логасофт ПЛЮС"</p>
                 <p>Шифратор "Cryptonit"</p>
                 <p>Prime Parser</p>
@@ -57,26 +84,52 @@
             </div>
 
         </div>
+        
+        <div class="back_btn">
+            <a href="#top"> <img src="/static/pictures/arrow_shape_up_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="На главную"> </a>
+        </div>
+
         <!-- Навыки, что важны -->
         <div class="skills">
             <h2>Навыки</h2>
             <!-- Профессиональные навыки, что зависят от IQ -->
             <div class="hard_skills">
                 <h3>Профессиональные навыки - hard skills</h3>
+                <div class="hard_skills_lst">
+                    <p>Backend - работа с кодом и логикой (Python 1.5 года, C# 8 месяцев, Java 8 месяцев)</p>
+                    <p>Frontend - работа с сайтами и визуальной частью (HTML + CSS)</p>
+                    <p>Data Bases (DBs) - работа с базами данных (NoSQL: ".json" формат, SQL: MS SMS, PostgreSQL, SQLite) - 1 год</p>
+                    <p>Interfaces - работа над интерфейсами и дизайном (.xml разметка, HTML + CSS, Tkinter, CustomTkinter, PyQT5) - 1 год</p>
+                    <p>Testing - работа над проверкой качества и работоспособности продукта (pytest, selenium, ручное тестирование с тест-кейсами) - 0.5 года</p>
+
+                </div>
                 
             </div>
 
             <!-- Личностные навыки, что зависят от эмоций и тд -->
             <div class="soft_skills">
                 <h3>Личностные качества - soft skills</h3>
+                <div class="soft_skills_lst">
+                    <p>Постоянное обучение - более глубокое изучение при необходимости и постоянное расширение возможностей</p>
+                    <p>Планирование (time management) - анализ задач и объёма работ, умение планировать деятельность в соответствии со сроками проекта</p>
+                    <p>Лидерство - умение распределять задачи и организовывать слаженную работу в команде, при несении ответственности за проект</p>
+                    <p>Концентрация - фокусирование на работе с самостоятельным изучением всех необходимых основ</p>
+                    <p>Спокойствие и рассудительность - способность оценивать проект с учётом мелких деталей реализации, разбивать большие работы на мелкие задачи без лишней паники и тревоги</p>
+                    <p>Желание работать и совершенствоваться - постоянная работа над собой, анализ своих возможностей и постоянное обновление требований к себе?</p>
+                    <p>Деловое общение - понимание, как и с кем общаться в различных окружениях</p>
 
+                </div>
             </div>
         </div>
 
         <!-- Контакты -->
         <div class="contacts">
-            <h2>Контакты</h2>
+            <h2 id="contacts_id">Контакты</h2>
+                <div class="contacts_cont">
+                    <p>Почта: alex.chesnokov.2007@gmail.com</p>
+                    <p>Git: <a href="https://github.com/Veidge">https://github.com/Veidge</a></p>
 
+                </div>
         </div>
 
     </body>
