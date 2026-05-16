@@ -105,6 +105,52 @@ h3 {
     height: 37.5px;
 }
 
+.projects {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow:brown;
+}
+
+.act_projects {
+    display: block;
+    text-align: center;
+    padding-top: 5pt;
+    padding-bottom: 15pt;
+    background:#8c402b;
+}
+
+.pasts_projects {
+    display: block;
+    text-align: center;
+    padding-top: 5pt;
+    padding-bottom: 15pt;
+    background:#f97720;
+}
+
+.proj_cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0px;
+    gap: 10px 20px;
+}
+
+.pasts_card {
+    display: inline-block;
+    width: 350px;
+    background:rgb(151, 125, 125);
+    border-radius: 1.5em;
+    margin: 20px 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+
 @media (max-width: 800px) {
     .drop {
         text-align: end;
