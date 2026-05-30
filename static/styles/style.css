@@ -73,14 +73,25 @@ h2 {
     font-style: italic;
     font-size: 24pt;
     text-align: center;
+    padding: 2em 0em 1em 0em;
+    margin: 0px;
 }
 
 h3 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+p {
+    margin: 0px;
+}
+
 .main_head>h1 {
-    padding: 1.5em 0em 0.5em 0em;
+    padding: 2em 0em 0.5em 0em;
 }
 
 .back_btn {
@@ -105,11 +116,27 @@ h3 {
     height: 37.5px;
 }
 
+.info_cont {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.info_about {
+    display: inline-block;
+    width: 90%;
+
+}
+
+.info_about>p {
+    padding: 5px;
+    text-align: justify;
+}
+
 .projects {
     display: block;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 20px;
     box-shadow:brown;
 }
 
@@ -150,6 +177,96 @@ h3 {
     padding: 15px;
 }
 
+.pasts_card>p {
+    text-align: justify;
+}
+
+.proj_name {
+    display: inline-block;
+    width: 90%;
+}
+
+.proj_name>p {
+    text-align: justify;
+    margin: 10px 5px;
+}
+
+.proj_info {
+    display: inline-block;
+    width: 90%;
+}
+
+.proj_info>p {
+    margin: 15px 5px 10px 5px;
+    text-align: justify;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.hard_skills {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.hard_skills_lst {
+    display: inline-block;
+    width: 90%;
+    text-align: justify;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.hard_skills_lst>p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.soft_skills {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.soft_skills_lst {
+    display: inline-block;
+    width: 90%;
+    text-align: justify;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.soft_skills_lst>p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.contacts {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.contacts_cont {
+    display: inline-block;
+    width: 90%;
+    text-align: justify;
+}
+
+.contacts_cont>p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.contacts img {
+    width: 45px;
+    height: 45px;
+}
 
 @media (max-width: 800px) {
     .drop {
