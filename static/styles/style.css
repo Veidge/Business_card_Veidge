@@ -1,7 +1,12 @@
+@import url(‘https://fonts.googleapis.com/css?family=ZenAntique&display=swap’);
+@import url(‘https://fonts.googleapis.com/css?family=NotoSerifDisplay&display=swap’);
 
 :root {
     --navbar-background-color: #8c402b;
-    --text-color-light: #f97720;
+    --text-color-navbar: #e7752a;
+    --text-color-light: #772a1d;
+    --text-color-bright: #f9a953;
+    --text-title-light: #b35431;
 }
 
 html {
@@ -44,7 +49,7 @@ body {
     text-decoration: none;
     font-size: 12pt;
     box-sizing: border-box;
-    color: var(--text-color-light)
+    color: var(--text-color-navbar)
 }
 
 nav {
@@ -63,7 +68,7 @@ header a {
 }
 
 h1 {
-    font-size: 32pt;
+    font-size: 28pt;
     text-align: center;
     padding: 0em;
     margin: 0em;
@@ -71,14 +76,24 @@ h1 {
 
 h2 {
     font-style: italic;
-    font-size: 24pt;
+    font-size: 20pt;
     text-align: center;
     padding: 2em 0em 1em 0em;
     margin: 0px;
+    font-family: 'Zen Antique', sans-serif;
 }
 
 h3 {
     text-align: center;
+    font-size: 14pt;
+    color: var(--text-title-light);
+    font-family: 'Noto Serif Display', sans-serif;
+}
+
+h5 {
+    font-size: 14pt;
+    margin: 5px;
+    padding: 5px;
 }
 
 a {
@@ -202,23 +217,23 @@ p {
 }
 
 .skills {
-    display: grid;
+    display: flex;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    background: linear-gradient(152deg, #55342d 43%, #f58c1b 100%);
 }
 
 .hard_skills {
     display: block;
-    width: 100%;
+    width: 45%;
     text-align: center;
 }
 
 .hard_skills_lst {
     display: inline-block;
-    width: 90%;
+    width: 85%;
     text-align: justify;
     margin: 20px 0px;
-    text-align: center;
 }
 
 .hard_skills_lst>p {
@@ -226,23 +241,60 @@ p {
     padding: 5px;
 }
 
+.hard_skills_lst>h4 {
+    margin: 5px;
+    padding: 5px;
+}
+
 .soft_skills {
     display: block;
-    width: 100%;
+    width: 55%;
     text-align: center;
 }
 
 .soft_skills_lst {
     display: inline-block;
-    width: 90%;
+    width: 85%;
     text-align: justify;
     margin: 20px 0px;
-    text-align: center;
 }
 
-.soft_skills_lst>p {
+.hard-skill {
+    margin: 5px 0px;
+    border-style: solid;
+    border-color: #8c402b;
+    border-radius: 10px;
+    background:rgb(151, 125, 125);
+}
+
+.hard-skill>p {
     margin: 5px;
     padding: 5px;
+    color: var(--text-color-bright);
+}
+
+.hard-skill>h5 {
+    color: var(--text-color-light);
+    
+}
+
+.soft-skill {
+    margin: 5px 0px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #8c402b;
+    border-radius: 10px;
+    background:rgb(151, 125, 125);
+}
+
+.soft-skill>p {
+    margin: 5px;
+    padding: 5px;
+    color: var(--text-color-bright);
+}
+
+.soft-skill>h5 {
+    color: var(--text-color-light);
 }
 
 .contacts {
@@ -267,6 +319,41 @@ p {
     width: 45px;
     height: 45px;
 }
+
+.contacts-sides {
+    display: flex;
+    justify-content: space-between;
+}
+
+.constacts-left {
+    width: 50%;
+    gap: 5px;
+}
+
+.constacts-right {
+    width: 50%;
+    gap: 5px;
+}
+
+
+@media (width > 1000px) {
+    h1 {
+        font-size: 40pt;
+    }
+
+    h2 {
+        font-size: 32pt;
+    }
+
+    h3 {
+        font-size: 24pt;
+    }
+
+    h5 {
+        font-size: 16pt;
+    }
+}
+
 
 @media (max-width: 800px) {
     .drop {
