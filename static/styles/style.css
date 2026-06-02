@@ -1,5 +1,27 @@
-@import url(‘https://fonts.googleapis.com/css?family=ZenAntique&display=swap’);
-@import url(‘https://fonts.googleapis.com/css?family=NotoSerifDisplay&display=swap’);
+@font-face {
+    font-family: "Serial Publicate";
+    src: url(/static/fonts/SerialPublicate/Serialpublicationdemo-qxo1.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Algerian";
+    src: url(/static/fonts/Algerian/ALGER.TTF) format('ttf');
+}
+
+@font-face {
+    font-family: "Westhorn";
+    src: url(/static/fonts/Westorn/WesthornRegular-w1Rjz.ttf); font-style: normal;
+}
+
+@font-face {
+    font-family: "Westhorn";
+    src: url(/static/fonts/Westorn/WesthornItalic-7B4yV.ttf); font-style: italic;
+}
+
+@font-face {
+    font-family: "IntrospectC";
+    src: url(/static/fonts/IntrospectC/IntrospectC.ttf);
+}
 
 :root {
     --navbar-background-color: #8c402b;
@@ -7,6 +29,9 @@
     --text-color-light: #772a1d;
     --text-color-bright: #f9a953;
     --text-title-light: #b35431;
+    --outline-color: #392b24;
+    --background-wood-dark: #5d2f22;
+    --background-wood-light: #70422e;
 }
 
 html {
@@ -68,6 +93,7 @@ header a {
 }
 
 h1 {
+    font-family: "Algerian", sans-serif;
     font-size: 28pt;
     text-align: center;
     padding: 0em;
@@ -76,32 +102,37 @@ h1 {
 
 h2 {
     font-style: italic;
+    /* font-family: 'Westhorn', sans-serif; */
     font-size: 20pt;
     text-align: center;
-    padding: 2em 0em 1em 0em;
+    padding: 1em 0em 1em 0em;
     margin: 0px;
-    font-family: 'Zen Antique', sans-serif;
+    font-family: 'IntrospectC', sans-serif;
 }
 
 h3 {
     text-align: center;
     font-size: 14pt;
     color: var(--text-title-light);
-    font-family: 'Noto Serif Display', sans-serif;
+    font-family: Science Gothic, serif;
+    /* font-family: 'IntrospectC', sans-serif; */
 }
 
 h5 {
     font-size: 14pt;
     margin: 5px;
     padding: 5px;
+    font-family: "Science Gothic", sans-serif;
 }
 
 a {
+    font-family: "Zen Antique", serif;
     text-decoration: none;
     color: brown;
 }
 
 p {
+    font-family: "Zen Antique", serif;
     margin: 0px;
 }
 
@@ -152,34 +183,45 @@ p {
     display: block;
     text-align: center;
     padding-top: 10px;
-    box-shadow:brown;
 }
 
 .act_projects {
     display: block;
     text-align: center;
-    padding-top: 5pt;
-    padding-bottom: 15pt;
-    background:#8c402b;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    background: #5d2f22;
+    /* background: linear-gradient(321deg, #b56a4b 42%, #764223 57%); */
+    /* background: radial-gradient(circle, #b6662b 5%, #95511d 16%, #764223 25%); */
 }
 
 .pasts_projects {
     display: block;
     text-align: center;
-    padding-top: 5pt;
-    padding-bottom: 15pt;
-    background:#f97720;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    /* background:#f97720; */
+    /* background: linear-gradient(360deg, #b56a4b 42%, #764223 57%); */
+    background: #70422e;
+}
+
+.block-cont {
+    display: block;
+    text-align: center;
+    justify-content: center;
 }
 
 .proj_cont {
     display: flex;
+    width: 90%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px;
-    margin-top: 25px;
-    margin-bottom: 25px;
     padding: 0px;
     gap: 10px 20px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .pasts_card {
@@ -190,6 +232,9 @@ p {
     margin: 20px 5px;
     text-align: center;
     padding: 15px;
+    border-style: solid;
+    border-color: var(--outline-color);
+    box-shadow: 0px 0px 2.5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .pasts_card>p {
@@ -221,6 +266,7 @@ p {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     background: linear-gradient(152deg, #55342d 43%, #f58c1b 100%);
+    padding-bottom: 1em;
 }
 
 .hard_skills {
@@ -302,6 +348,7 @@ p {
     width: 100%;
     text-align: center;
     margin: 0px 0px 20px 0px;
+    padding: 2em 0em 0.5em 0em;
 }
 
 .contacts_cont {
@@ -338,15 +385,15 @@ p {
 
 @media (width > 1000px) {
     h1 {
-        font-size: 40pt;
+        font-size: 36pt;
     }
 
     h2 {
-        font-size: 32pt;
+        font-size: 24pt;
     }
 
     h3 {
-        font-size: 24pt;
+        font-size: 20pt;
     }
 
     h5 {
