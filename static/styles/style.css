@@ -74,7 +74,8 @@ body {
     text-decoration: none;
     font-size: 12pt;
     box-sizing: border-box;
-    color: var(--text-color-navbar)
+    /* color: var(--text-color-navbar) */
+    color: var(--text-color-bright);
 }
 
 nav {
@@ -115,6 +116,7 @@ h3 {
     font-size: 14pt;
     color: var(--text-title-light);
     font-family: Science Gothic, serif;
+    margin: 1em 0em;
     /* font-family: 'IntrospectC', sans-serif; */
 }
 
@@ -190,7 +192,7 @@ p {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 50px;
-    background: #5d2f22;
+    background: var(--background-wood-dark);
     /* background: linear-gradient(321deg, #b56a4b 42%, #764223 57%); */
     /* background: radial-gradient(circle, #b6662b 5%, #95511d 16%, #764223 25%); */
 }
@@ -216,7 +218,7 @@ p {
     width: 90%;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px;
+    padding: 2em 0em;
     gap: 10px 20px;
     border-radius: 20px;
     margin: auto;
@@ -227,7 +229,7 @@ p {
 .pasts_card {
     display: inline-block;
     width: 350px;
-    background:rgb(151, 125, 125);
+    background:#e6e0dc;
     border-radius: 1.5em;
     margin: 20px 5px;
     text-align: center;
@@ -259,6 +261,12 @@ p {
 .proj_info>p {
     margin: 15px 5px 10px 5px;
     text-align: justify;
+    /* color: var(--background-wood-dark); */
+    color: var(--outline-color);
+}
+
+.proj_info img {
+    height: 75px;
 }
 
 .skills {
@@ -292,36 +300,44 @@ p {
     padding: 5px;
 }
 
+.hard-skill {
+    margin: 5px 0px;
+    border-style: solid;
+    border-color: #8c402b;
+    border-radius: 10px;
+    background:#e6e0dc;
+}
+
+.hard-skill>p {
+    margin: 5px;
+    padding: 5px;
+    color: var(--text-color-light);
+}
+
+.hard-skill>h5 {
+    color: var(--text-color-light);
+    
+}
+
 .soft_skills {
     display: block;
     width: 55%;
     text-align: center;
 }
 
+.skills h3 {
+    margin: 0.25em 0em;
+}
+
+.skills_cont {
+    padding: 1em 0em;
+}
+
 .soft_skills_lst {
     display: inline-block;
     width: 85%;
     text-align: justify;
-    margin: 20px 0px;
-}
-
-.hard-skill {
-    margin: 5px 0px;
-    border-style: solid;
-    border-color: #8c402b;
-    border-radius: 10px;
-    background:rgb(151, 125, 125);
-}
-
-.hard-skill>p {
-    margin: 5px;
-    padding: 5px;
-    color: var(--text-color-bright);
-}
-
-.hard-skill>h5 {
-    color: var(--text-color-light);
-    
+    margin: 1em 0em;
 }
 
 .soft-skill {
@@ -330,13 +346,13 @@ p {
     border-style: solid;
     border-color: #8c402b;
     border-radius: 10px;
-    background:rgb(151, 125, 125);
+    background:#e6e0dc;
 }
 
 .soft-skill>p {
     margin: 5px;
     padding: 5px;
-    color: var(--text-color-bright);
+    color: var(--text-color-light);
 }
 
 .soft-skill>h5 {
@@ -401,6 +417,11 @@ p {
     }
 }
 
+@media (width < 900px) {
+    .proj_cont {
+        padding: 0em;
+    }
+}
 
 @media (max-width: 800px) {
     .drop {
@@ -464,5 +485,27 @@ p {
 
     .navbar {
         justify-content: space-between;
+    }
+}
+
+@media (width < 700px) {
+    .skills {
+        display: block;
+    }
+
+    .hard_skills {
+        width: 100%;
+    }
+
+    .hard_skills_lst {
+        width: 80%;
+    }
+
+    .soft_skills {
+        width: 100%;
+    }
+
+    .soft_skills_lst {
+        width: 80%;
     }
 }
