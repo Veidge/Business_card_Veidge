@@ -16,12 +16,7 @@
 
     <header>
         <div class="navbar">
-            <div class="riseup">
-                <!-- <a href="#top"> <img src="static/pictures/logo.png" alt="Логотип"> </a>                     -->
-                <!-- <div class="riseup-logo">
-                    <a href="#top"><img src="static/pictures/logo_text.png" alt="Логотип"></a>
-                </div> -->
-            </div>
+            <div class="riseup"></div>
             <div class="drop">
                 <div class="nav-list">
                     <nav>
@@ -34,16 +29,6 @@
             </div>
         </div>
     </header>
-
-    <!-- <header>
-        <div class="navbar">
-            <nav>
-                <a href="#main_id">Главная</a>
-                <a href="#projects_id">Портфолио</a>
-                <a href="#contacts_id">Контакты</a>
-            </nav>
-        </div>
-    </header> -->
 
     <body>
         <!-- Заголовок -->
@@ -88,112 +73,82 @@
                                 <a href="/ai_proj.html">Подробнее</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
             <!-- Для каждого нужно небольшую карточку сделать -->
             <div class="pasts_projects">
                 <h3>Завершённые проекты</h3>
-                <div class="proj_cont">
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/App_FilmsDB.git">Приложение "КиноВитрина"</a></p>
-                        </div>
-                        <div class="proj_info">
-                            <p>Приложение на Android с системой авторизации для записи на сеанс фильма с базой данных. 
-                                В приложении представлен список фильмов, на которые можно записаться (таблица с постерами фильмов и всеми необходимыми данными). 
-                                При клике на фильм система уведомит вас о записи.
-                                Дополнительно в приложении задан аккаунт админа, который позволяет добавлять фильмы в базу данных.
-                            </p>
-                            <p>Стэк разработки: Java, (Android Studio), SQLite</p>
-                        </div>
-                    </div>
-
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/Landing_Page.git">Сайт "Цифровой старт"</a></p>
-                        </div>
-                        <div class="proj_info">
-                            <p>Сайт совместного проекта, посвящённому мероприятиям в сфере IT, организаций ООО "Асандра" и ООО "Логасофт ПЛЮС".
-                                Любой желающий может записаться, отправив заявку, размещённую на сайте, до начала самого мероприятия.
-                                На сайте присутствует интерактивная Яндекс Карта, с помощью которой можно легко понять, как добраться до места проведения мероприятия.
-                                Для корректного понимания времени на сайте создан таймер, который показывает оставшееся время приёма заявок до заданной даты.
-                            </p>
-                            <p>Стэк разработки: HTML, CSS, JavaScript</p>
-                        </div>
-                    </div>
-
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/Cryptonit.git">Шифратор "Cryptonit"</a></p>
-                        </div>
-                        <div class="proj_info">
-                            <p>Десктопное приложение-шифратор, который позволяет шифровать текст и текстовые файлы различными способами. 
-                                Доступен выбор шифрования или дешифрования, по нажатию клавишы F1 открывается справка.
-                                Для удобства использования есть функция переключения тем (светлая / тёмная).
-                                Удобно копировать и вставлять текст при помощи базовых комбинаций клавиш или с помощью специальных виджетов интерфейса.
-                            </p>
-                            <p>Стэк разработки: Python 3.13</p>
-                        </div>
-                    </div>
-                    
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/PrimeParser.git">Prime Parser</a></p>
-                        </div>
-                        <div class="proj_info">
-                            <p>Десктопное приложение для автоматизации отслеживания динамики цен на платформе warframe.market.
-                                Реализован поиск по API и добавление наиболее выгодного предложения в таблицу приложения в режиме реального времени. 
-                                По каждому товару есть графики динамики цены.
-                            </p>
-                            <p>
-                                Исходный репозиторий работы:
-                                <div class="proj_img">
-                                    <a href="https://github.com/Tenebrea/warframe-market-parser.git"><img src="/static/pictures/warf_parser_ic_big_imresizer.png"></a>
-                                </div>
-                            </p>
-                            <p>Стэк разработки: Python 3.13, QT Designer</p>
-                        </div>
-                    </div>
-
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/WeatherParser.git">Weather Parser</a></p>
-                        </div>
-                        <div class="proj_info">
-                            <p>Мобильное приложение для получения данных о погоде в выбранном городе.
-                                Все данные приходят по API с достоверного источника. 
-                                Города можно просмотреть или сохранить в избранное для удобного и быстрого отслеживания.
-                            </p>
-                            <p>Стэк разработки: Kotlin</p>
+                <div class="block_cont">
+                    <div class="proj_cont">
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/films_logo.jpg">
+                            </div>
+                            <div class="card_text">
+                                <h5>Приложение "КиноВитрина"</h5>
+                                <a href="/film_proj.html">Подробнее</a>
+                            </div>
                         </div>
 
-                    </div>
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/digit_start_logo.png">
+                            </div>
+                            <div class="card_text">
+                                <h5>Сайт "Цифровой старт"</h5>
+                                <a href="/digit_start_proj.html">Подробнее</a>
+                            </div>
+                        </div>
 
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/Achievement_Tracker.git">Achievement Tracker</a></p>
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/cryptonit_full.png">
+                            </div>
+                            <div class="card_text">
+                                <h5>Шифратор "Cryptonit"</h5>
+                                <a href="/cryptonit_proj.html">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="proj_info">
-                            <p>Десктопное приложение для фиксации данных о своих успехах / достижениях / заметках с удобным хранением.
-                                Предусмотрено создание отдельных баз данных и таблиц, удаление и изменение данных.
-                                Для числовых значений можно построить график для наглядности динамики результатов.
-                            </p>
-                            <p>Стэк разработки: Python 3.13, SQLite</p>
-                        </div>
-                    </div>
 
-                    <div class="pasts_card">
-                        <div class="proj_name">
-                            <p><a href="https://github.com/Veidge/git_practice_SpaceGame.git">Игра Spaceship</a></p>
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/warf_parser_ic.png">
+                            </div>
+                            <div class="card_text">
+                                <h5>Prime Parser</h5>
+                                <a href="/parser_proj.html">Подробнее</a>
+                            </div>
                         </div>
-                        <div class="proj_info">
-                            <p>Десктопная игра про управление кораблём и выживание под обстрелом вражеских кораблей.
-                                Реализована система управления и ведения огня, регистрация попаданий по врагу.
-                                За каждую игру накапливаются очки, которые фиксируются и показываются как рекорд.
-                            </p>
-                            <p>Стэк разработки: Python 3.13</p>
+
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/weather_parser_logo.png">
+                            </div>
+                            <div class="card_text">
+                                <h5>Weather Parser</h5>
+                                <a href="/weather_proj.html">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/achievement_tracker_logo.png">
+                            </div>
+                            <div class="card_text">
+                                <h5>Achievement Tracker</h5>
+                                <a href="/tracker_proj.html">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="pasts_cardv2">
+                            <div class="card_pict">
+                                <img src="/static/pictures/shapeship_logo.png">
+                            </div>
+                            <div class="card_text">
+                                <h5>Игра Spaceship</h5>
+                                <a href="/spaceship_proj.html">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </div>

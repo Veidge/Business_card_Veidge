@@ -339,6 +339,7 @@ p {
     /* width: 100%; */
     /* height: 50%; */
     max-height: 600px;
+    max-width: 390px;
     /* margin: 0.5em 2.5em; */
 }
 
