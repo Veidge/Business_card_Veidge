@@ -609,3 +609,39 @@ p {
         width: 80%;
     }
 }
+
+@media (width < 350px) {    
+    .pasts_cardv2 {
+        display: inline-block;
+        height: 375px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .card_pict {
+        width: 93.75%;
+        margin: 0.5em;
+        text-align: center;
+    }
+
+    .card_pict>img {
+        width: 90%;
+    }
+
+    .card_text {
+        width: 100%;
+    }
+
+    .card_text>a {
+        padding: 5px;
+        margin-inline: 5px;
+        padding-inline: 1em;
+    }
+
+    .card_text>h5 {
+        margin: 5px;
+        text-align: left;
+        padding: 1em;
+    }
+
+}
