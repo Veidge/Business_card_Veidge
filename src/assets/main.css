@@ -1,0 +1,46 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  padding: 0px;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: "Serial Publicate";
+    src: url(/static/fonts/SerialPublicate/Serialpublicationdemo-qxo1.ttf) format("ttf");
+}
+
+@font-face {
+    font-family: "Algerian";
+    src: url(/static/fonts/Algerian/ALGER.TTF) format('ttf');
+}
+
+@font-face {
+    font-family: "Westhorn";
+    src: url(/static/fonts/Westorn/WesthornRegular-w1Rjz.ttf); font-style: normal;
+}
+
+@font-face {
+    font-family: "Westhorn";
+    src: url(/static/fonts/Westorn/WesthornItalic-7B4yV.ttf); font-style: italic;
+}
+
+@font-face {
+    font-family: "IntrospectC";
+    src: url(/static/fonts/IntrospectC/IntrospectC.ttf);
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+
