@@ -7,6 +7,7 @@ import AboutPage from "./components/pages/AboutPage.vue"
 import ProjectPage from "./components/pages/ProjectPage.vue"
 import ContactsPage from "./components/pages/ContactsPage.vue"
 
+
 const routes = [
     { path: "/", component: AboutPage },
     { path: "/projects", component: ProjectPage },
