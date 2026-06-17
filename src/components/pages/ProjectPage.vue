@@ -2,15 +2,20 @@
 import { ref } from 'vue';
 
 const projectObjects = [
-    // {name: 'Bussiness Card (Vue)', 
-    // imgSource: "",
-    // id: "/aiProj",
-    // isCompleted: false},
+    {name: 'Bussiness Card (Vue)', 
+    imgSource: "static/pictures/VeidgeSilesDeShadow.png",
+    id: "/vueCard",
+    isCompleted: false},
 
     {name: 'AI PDF-Analyser', 
     imgSource: "/static/pictures/ai_pdf_logo.png",
     id: "/aiProj",
     isCompleted: false},
+
+    {name: 'Prime Parser', 
+    imgSource: "/static/pictures/warf_parser_ic.png",
+    id: "/primeParser",
+    isCompleted: true},
 
     {name: 'Приложение "КиноВитрина"', 
     imgSource: "/static/pictures/films_logo.jpg",
@@ -25,11 +30,6 @@ const projectObjects = [
     {name: 'Шифратор "Cryptonit"', 
     imgSource: "/static/pictures/cryptonit_full.png",
     id: "/cryptonit",
-    isCompleted: true},
-
-    {name: 'Prime Parser', 
-    imgSource: "/static/pictures/warf_parser_ic.png",
-    id: "/primeParser",
     isCompleted: true},
 
     {name: 'Weather Parser', 
@@ -57,18 +57,37 @@ const projectObjects = [
         <div class="act_projects">
             <div class="block_cont">
                 <div class="proj_cont">
-                        <RouterLink :to="project.id" 
-                            v-for="project in projectObjects" >
-                            <div class="proj_card">
-                                <div class="proj_img">
-                                    <img :src="project.imgSource" alt=""> 
-                                </div>
-                                <div class="proj_text">
-                                    <h5> {{ project.name }} </h5>
-                                    <span>Подробнее</span>
-                                </div>
+                    <RouterLink :to="project.id" 
+                        v-for="project in projectObjects.filter(p => !p.isCompleted)" >
+                        <div class="proj_card">
+                            <div class="proj_img">
+                                <img :src="project.imgSource" alt=""> 
                             </div>
-                        </RouterLink>
+                            <div class="proj_text">
+                                <h5> {{ project.name }} </h5>
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </RouterLink>
+                </div>
+            </div>
+        </div>
+        <h3>Завершённые проекты</h3>
+        <div class="past_projects">
+            <div class="block_cont">
+                <div class="proj_cont">
+                    <RouterLink :to="project.id" 
+                        v-for="project in projectObjects.filter(p => p.isCompleted)" >
+                        <div class="proj_card">
+                            <div class="proj_img">
+                                <img :src="project.imgSource" alt=""> 
+                            </div>
+                            <div class="proj_text">
+                                <h5> {{ project.name }} </h5>
+                                <span>Подробнее</span>
+                            </div>
+                        </div>
+                    </RouterLink>
                 </div>
             </div>
         </div>
@@ -126,10 +145,8 @@ const projectObjects = [
     .proj_card {
         display: flex;
         width: 550px;
-        /* height: 320.79px; */
         height: 300px;
         background: var(--background-white);
-        /* padding: 0.5em; */
         margin: 0.5em;
         border-style: solid;
         border-radius: 1.5em;
@@ -156,6 +173,42 @@ const projectObjects = [
         text-decoration: none;
     }
 
+    @media (width < 700px) {
+        .proj_card {
+            display: inline-block;
+            width: 90%;
+            height: 375px;
+            justify-items: center;
+            position: relative;
+        }
+
+        .proj_img {
+            width: 93.75%;
+            height: 60%;
+            text-align: center;
+            margin: 0.5em;
+        }
+
+        .proj_text {
+            width: 90%;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    /* @media (width < 350px) {
+        .proj_card {
+            display: inline-block;
+            height: 375px;
+            width: 90%;
+            justify-content: center;
+        }
+    } */
 
 
 </style>
