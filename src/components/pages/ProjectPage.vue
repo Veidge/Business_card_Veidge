@@ -193,6 +193,7 @@ const projectObjects = [
             width: 90%;
             position: absolute;
             bottom: 0;
+            text-align: left;
 
         }
 
