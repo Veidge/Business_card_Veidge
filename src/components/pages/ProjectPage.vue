@@ -1,53 +1,61 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 
 const projectObjects = [
     {name: 'Bussiness Card (Vue)', 
-    imgSource: "static/pictures/VeidgeSilesDeShadow.png",
-    id: "/vueCard",
+    imgSource: "/static/pictures/VeidgeSilesDeShadow.png",
+    id: "vueCard",
     isCompleted: false},
 
     {name: 'AI PDF-Analyser', 
     imgSource: "/static/pictures/ai_pdf_logo.png",
-    id: "/aiProj",
+    id: "aiProj",
     isCompleted: false},
 
     {name: 'Prime Parser', 
     imgSource: "/static/pictures/warf_parser_ic.png",
-    id: "/primeParser",
+    id: "primeParser",
     isCompleted: true},
 
     {name: 'Приложение "КиноВитрина"', 
     imgSource: "/static/pictures/films_logo.jpg",
-    id: "/films",
+    id: "films",
     isCompleted: true},
 
     {name: 'Сайт "Цифровой старт"', 
     imgSource: "/static/pictures/digit_start_logo.png",
-    id: "/digitStart",
+    id: "digitStart",
     isCompleted: true},
 
     {name: 'Шифратор "Cryptonit"', 
     imgSource: "/static/pictures/cryptonit_full.png",
-    id: "/cryptonit",
+    id: "cryptonit",
     isCompleted: true},
 
     {name: 'Weather Parser', 
     imgSource: "/static/pictures/weather_parser_logo.png",
-    id: "/weatherParser",
+    id: "weatherParser",
     isCompleted: true},
 
     {name: 'Achievement Tracker', 
     imgSource: "/static/pictures/achievement_tracker_logo.png",
-    id: "/tracker",
+    id: "tracker",
     isCompleted: true},
     
     {name: 'Игра Spaceship', 
     imgSource: "/static/pictures/shapeship_logo.png",
-    id: "/spaceship",
+    id: "spaceship",
     isCompleted: true},
-
 ]
+
+const completed = computed(() => {
+    return projectObjects.filter(p => !p.isCompleted)
+})
+
+const notCompleted = computed(() => {
+    return projectObjects.filter(p => p.isCompleted)
+})
+
 </script>
 
 <template>
@@ -57,8 +65,9 @@ const projectObjects = [
         <div class="act_projects">
             <div class="block_cont">
                 <div class="proj_cont">
-                    <RouterLink :to="project.id" 
-                        v-for="project in projectObjects.filter(p => !p.isCompleted)" >
+                    <RouterLink :to="`/projects/${project.id}`" :key="id"
+                        v-for="(project, id) in completed" 
+                    >
                         <div class="proj_card">
                             <div class="proj_img">
                                 <img :src="project.imgSource" alt=""> 
@@ -76,8 +85,9 @@ const projectObjects = [
         <div class="past_projects">
             <div class="block_cont">
                 <div class="proj_cont">
-                    <RouterLink :to="project.id" 
-                        v-for="project in projectObjects.filter(p => p.isCompleted)" >
+                    <RouterLink :to="`/projects/${project.id}`" :key="id" 
+                        v-for="(project, id) in notCompleted" 
+                    >
                         <div class="proj_card">
                             <div class="proj_img">
                                 <img :src="project.imgSource" alt=""> 
@@ -95,7 +105,7 @@ const projectObjects = [
 
 </template>
 
-<style>
+<style scoped>
     img {
         /* max-width: 330px; */
         width: 100%;

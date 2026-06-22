@@ -1,5 +1,11 @@
 @import './base.css';
 
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Science+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
 #app {
   margin: 0 auto;
   padding: 0px;

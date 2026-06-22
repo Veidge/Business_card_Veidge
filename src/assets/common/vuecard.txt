@@ -1,0 +1,6 @@
+<p class="p_proj">Собственный сайт с краткой информацией о себе, проектами и ссылками.
+В основе лежит вариант на HTML + CSS. Текущая реализация является переработкой с использованием Vue.js.
+Первоначально создавался как сайт-визитка. 
+</p>
+<p>Стэк разработки: Vue.js</p>
+<a href="https://github.com/Veidge/Business_card_Veidge.git">Ссылка на GitHub: https://github.com/Veidge/Business_card_Veidge.git</a>

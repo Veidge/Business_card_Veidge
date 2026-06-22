@@ -25,14 +25,10 @@ const navbarObjects = ref([
     </div>
 </template>
 
-<style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=Science+Gothic&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+<style scoped>
     a {
-        padding: 1em;
+        padding: 0.5em;
+        margin: 0em;
         text-decoration: none;
         color: var(--text-color-bright);
         font-size: 12pt;
