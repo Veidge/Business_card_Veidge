@@ -140,4 +140,25 @@ console.log(info.value?.text)
         margin: 0px;
     }
 
+    @media (width < 800px) {
+        img {
+            max-width: 600px;
+        }
+
+        .block_proj {
+            display: block;
+        }
+
+        .left_cont {
+            width: 100%;
+            margin: 1em;
+        }
+
+        .right_cont {
+            width: 100%;
+            padding: 1em;
+            margin: 1em 0em 0em 0em;
+        }
+    }
+
 </style>
