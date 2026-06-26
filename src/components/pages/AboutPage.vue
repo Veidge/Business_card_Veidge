@@ -4,6 +4,7 @@ import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 import ProjectPage from './ProjectPage.vue';
 import SkillsPage from './SkillsPage.vue';
+import ContactsPage from './ContactsPage.vue';
 
 dayjs.extend(duration)
 
@@ -34,6 +35,7 @@ const year = dayjs.duration(dayjs().diff(dayjs(new Date(2007, 5, 11)))).years()
         </div>
         <ProjectPage/>
         <SkillsPage />
+        <ContactsPage />
     </div>
 </template>
 
@@ -59,6 +61,7 @@ const year = dayjs.duration(dayjs().diff(dayjs(new Date(2007, 5, 11)))).years()
         padding: 0.5em;
         font-family: Science Gothic, serif;
         font-weight: bold;
+        margin: 0em;
     }
 
     p {

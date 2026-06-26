@@ -126,6 +126,7 @@ const softSkills = [
     .block_cont {
         display: block;
         justify-items: center;
+        padding-bottom: 3em;
     }
 
     .skills_cont {

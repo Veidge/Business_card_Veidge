@@ -115,6 +115,11 @@ const notCompleted = computed(() => {
         text-decoration: none;
     }
 
+    h2 {
+        margin-top: 1.5em;
+        padding: 0.5em;
+    }
+
     h3 {
         margin: 1em 0em;
     }
@@ -132,6 +137,7 @@ const notCompleted = computed(() => {
 
     .projects {
         text-align: center;
+        margin-bottom: 1.5em;
     }
 
     .act_projects {
