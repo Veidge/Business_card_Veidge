@@ -11,6 +11,7 @@ import cryptonit from "../../assets/common/cryptonit.txt?raw"
 import weatherparser from "../../assets/common/weatherparser.txt?raw"
 import tracker from "../../assets/common/tracker.txt?raw"
 import spaceship from "../../assets/common/spaceship.txt?raw"
+import ContactsPage from './ContactsPage.vue';
 
 const projectLinks :Record<string, {header: string, img: string, text: string }> = {
     vueCard: {
@@ -100,6 +101,7 @@ console.log(info.value?.text)
             </div>
         </div>
     </div>
+    <ContactsPage/>
 </template>
 
 <style scoped>
@@ -111,6 +113,10 @@ console.log(info.value?.text)
 
     a {
         margin: 1em;
+    }
+
+    p {
+        text-align: left;
     }
 
     .block_cont {
@@ -134,6 +140,7 @@ console.log(info.value?.text)
     .right_cont {
         width: 60%;
         padding: 2em 0em 0em 2em;
+        text-align: left;
     }
 
     .p_proj {

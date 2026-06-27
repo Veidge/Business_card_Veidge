@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
+import ContactsPage from './ContactsPage.vue';
 
 const projectObjects = [
     {name: 'Bussiness Card (Vue)', 
@@ -102,7 +103,6 @@ const notCompleted = computed(() => {
             </div>
         </div>
     </div>
-
 </template>
 
 <style scoped>

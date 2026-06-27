@@ -4,4 +4,8 @@
 Города можно просмотреть или сохранить в избранное для удобного и быстрого отслеживания.
 </p>
 <p>Стэк разработки: Python 3.13, QT Designer</p>
-<a href="https://github.com/Veidge/WeatherParser.git">Ссылка на GitHub: https://github.com/Veidge/WeatherParser.git</a>
+<p style=text-align:left;>
+<a style=margin:0px; 
+href="https://github.com/Veidge/WeatherParser.git">Ссылка на GitHub: https://github.com/Veidge/WeatherParser.git
+</a>
+</p>

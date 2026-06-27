@@ -102,8 +102,6 @@ const softSkills = [
             </div>
         </div>
     </div>
-
-
 </template>
 
 <style scoped>

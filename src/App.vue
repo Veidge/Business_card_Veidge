@@ -8,7 +8,7 @@ import ProjectPage from './components/pages/ProjectPage.vue';
 </script>
 
 <template>
-  <Navbar/>
+  <Navbar />
   <RouterView />
 </template>
 

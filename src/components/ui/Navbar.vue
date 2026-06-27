@@ -5,7 +5,7 @@ import { ref } from 'vue';
 const navbarObjects = ref([
     {text: "Главная", link: "/"}, 
     {text: "Портфолио", link: "/projects"}, 
-    {text: "Контакты", link: "/contacts"}
+    {text: "Навыки", link: "/skills"}
 ])
 
 </script>

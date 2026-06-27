@@ -4,5 +4,8 @@
 <p>
 Стэк разработки: Java, (Android Studio), SQLite
 </p>
-<a href="https://github.com/Veidge/App_FilmsDB.git">
-Ссылка на GitHub: https://github.com/Veidge/App_FilmsDB.git</a>
+<p style=text-align:left;>
+<a style=margin:0px; href="https://github.com/Veidge/App_FilmsDB.git">
+Ссылка на GitHub: https://github.com/Veidge/App_FilmsDB.git
+</a>
+</p>

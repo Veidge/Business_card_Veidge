@@ -3,4 +3,8 @@
 Первоначально создавался как сайт-визитка. 
 </p>
 <p>Стэк разработки: Vue.js</p>
-<a href="https://github.com/Veidge/Business_card_Veidge.git">Ссылка на GitHub: https://github.com/Veidge/Business_card_Veidge.git</a>
+<p style=text-align:left;>
+<a style=margin:0px; href="https://github.com/Veidge/Business_card_Veidge.git">
+Ссылка на GitHub: https://github.com/Veidge/Business_card_Veidge.git
+</a>
+</p>
