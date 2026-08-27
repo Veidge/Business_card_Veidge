@@ -1,5 +1,3 @@
-![This is how I work](/public/static/pictures/hedgehog_bat_1.webp)
-
 # WebVeidge
 
 Сайт пользователя Veidge, созданный с целью собрать основную и актуальную информацию, разместив её в удобном формате.
@@ -37,3 +35,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+![This is how I work](/public/static/pictures/hedgehog_bat_1.webp)
+
