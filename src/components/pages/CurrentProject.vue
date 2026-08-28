@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
- 
+
+import aurorite from "../../assets/common/aurorite.txt?raw"
 import vuecard from "../../assets/common/vuecard.txt?raw"
 import aiproj from "../../assets/common/aiproj.txt?raw"
 import primeparser from "../../assets/common/primeparser.txt?raw"
@@ -14,8 +15,14 @@ import spaceship from "../../assets/common/spaceship.txt?raw"
 import ContactsPage from './ContactsPage.vue';
 
 const projectLinks :Record<string, {header: string, img: string, text: string }> = {
+    aurorite: {
+        header: "Aurorite",
+        img: "/static/pictures/aurorite-full-dark.svg",
+        text: aurorite
+    },
+
     vueCard: {
-        header: "Bussiness Card (Vue)",
+        header: "Business Card (Vue)",
         img: "/static/pictures/VeidgeSilesDeShadow.png",
         text: vuecard
     },
@@ -107,8 +114,8 @@ console.log(info.value?.text)
 <style scoped>
     img {
         /* width: 100%; */
-        max-width: 450px;
-        max-height: 600px;
+        max-width: 390px;
+        max-height: 390px;
     }
 
     a {
@@ -126,9 +133,11 @@ console.log(info.value?.text)
     .block_proj {
         display: flex;
         width: 90%;
+        height: 614.5px;
         padding: 1.5em;
-        margin-top: 2em;
+        padding-top: 3.5em;
         justify-content: center;
+        box-sizing: border-box;
     }
 
     .left_cont {

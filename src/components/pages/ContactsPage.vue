@@ -76,7 +76,7 @@ const isCommercial = computed(() => {
         display: flex;
         width: 90%;
         justify-content: space-between;
-        margin: 1em;
+        margin: 1em 0;
     }
 
 

@@ -3,15 +3,20 @@ import { computed, ref } from 'vue';
 import ContactsPage from './ContactsPage.vue';
 
 const projectObjects = [
-    {name: 'Bussiness Card (Vue)', 
+    {name: 'Aurorite',
+    imgSource: "/static/pictures/aurorite.svg",
+    id: "aurorite",
+    isCompleted: false},
+
+    {name: 'Business Card (Vue)',
     imgSource: "/static/pictures/VeidgeSilesDeShadow.png",
     id: "vueCard",
-    isCompleted: false},
+    isCompleted: true},
 
     {name: 'AI PDF-Analyser', 
     imgSource: "/static/pictures/ai_pdf_logo.png",
     id: "aiProj",
-    isCompleted: false},
+    isCompleted: true},
 
     {name: 'Prime Parser', 
     imgSource: "/static/pictures/warf_parser_ic.png",
