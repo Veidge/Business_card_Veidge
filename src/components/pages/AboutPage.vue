@@ -50,7 +50,6 @@ const year = dayjs.duration(dayjs().diff(dayjs(new Date(2007, 5, 11)))).years()
         </div>
         <ProjectPage/>
         <SkillsPage />
-        <ContactsPage />
     </div>
 </template>
 

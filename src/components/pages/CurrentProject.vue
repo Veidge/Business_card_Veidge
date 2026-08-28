@@ -11,8 +11,7 @@ import digitstart from "../../assets/common/digitstart.txt?raw"
 import cryptonit from "../../assets/common/cryptonit.txt?raw"
 import weatherparser from "../../assets/common/weatherparser.txt?raw"
 import tracker from "../../assets/common/tracker.txt?raw"
-import spaceship from "../../assets/common/spaceship.txt?raw"
-import ContactsPage from './ContactsPage.vue';
+import spaceship from "../../assets/common/spaceship.txt?raw";
 
 const projectLinks :Record<string, {header: string, img: string, text: string }> = {
     aurorite: {
@@ -104,11 +103,10 @@ console.log(info.value?.text)
                 </div>
             </div>
             <div class="right_cont" v-html="info?.text">
-    
+
             </div>
         </div>
     </div>
-    <ContactsPage/>
 </template>
 
 <style scoped>
@@ -142,18 +140,18 @@ console.log(info.value?.text)
 
     .left_cont {
         width: 40%;
-        margin: 1em 0em 0em 1em;
+        margin: 1em 0 0 1em;
         text-align: center;
     }
 
     .right_cont {
         width: 60%;
-        padding: 2em 0em 0em 2em;
+        padding: 2em 0 0 2em;
         text-align: left;
     }
 
     .p_proj {
-        margin: 0px;
+        margin: 0;
     }
 
     @media (width < 800px) {
@@ -173,7 +171,7 @@ console.log(info.value?.text)
         .right_cont {
             width: 100%;
             padding: 1em;
-            margin: 1em 0em 0em 0em;
+            margin: 1em 0 0 0;
         }
     }
 
