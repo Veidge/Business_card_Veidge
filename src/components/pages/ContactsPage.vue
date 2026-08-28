@@ -79,5 +79,12 @@ const isCommercial = computed(() => {
         margin: 1em 0;
     }
 
+    @media (width < 340px) {
+        .contacts_block {
+            padding-inline: 0;
+
+        }
+    }
+
 
 </style>

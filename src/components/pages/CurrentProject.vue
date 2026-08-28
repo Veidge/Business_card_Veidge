@@ -134,7 +134,7 @@ console.log(info.value?.text)
         height: 614.5px;
         padding: 1.5em;
         padding-top: 3.5em;
-        justify-content: center;
+        justify-items: center;
         box-sizing: border-box;
     }
 
@@ -161,17 +161,36 @@ console.log(info.value?.text)
 
         .block_proj {
             display: block;
+            height: auto;
         }
 
         .left_cont {
             width: 100%;
             margin: 1em;
+            justify-items: center;
         }
 
         .right_cont {
             width: 100%;
             padding: 1em;
             margin: 1em 0 0 0;
+        }
+    }
+
+    @media (width < 550px) {
+        img {
+            max-width: 400px;
+        }
+    }
+
+    @media (width < 415px) {
+        img {
+            max-width: 250px;
+        }
+
+        .right_cont {
+            padding: 0;
+            padding-top: 1em;
         }
     }
 
