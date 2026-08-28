@@ -4,7 +4,7 @@ import ContactsPage from './ContactsPage.vue';
 
 const projectObjects = [
     {name: 'Aurorite',
-    imgSource: "/static/pictures/aurorite.svg",
+    imgSource: "/static/pictures/aurorite.png",
     id: "aurorite",
     isCompleted: false},
 
@@ -23,17 +23,17 @@ const projectObjects = [
     id: "primeParser",
     isCompleted: true},
 
-    {name: 'Приложение "КиноВитрина"', 
+    {name: 'Мобильная витрина фильмов',
     imgSource: "/static/pictures/films_logo.jpg",
     id: "films",
     isCompleted: true},
 
-    {name: 'Сайт "Цифровой старт"', 
+    {name: 'Сайт Цифровой старт',
     imgSource: "/static/pictures/digit_start_logo.png",
     id: "digitStart",
     isCompleted: true},
 
-    {name: 'Шифратор "Cryptonit"', 
+    {name: 'Шифратор Cryptonit',
     imgSource: "/static/pictures/cryptonit_full.png",
     id: "cryptonit",
     isCompleted: true},
@@ -186,7 +186,6 @@ const notCompleted = computed(() => {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        text-align: justify;
         padding: 1em;
     }
 
