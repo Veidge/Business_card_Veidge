@@ -1,0 +1,15 @@
+<p>
+Веб-сервис для ваших кампаний DnD.
+Создавайте своих персонажей и играйте с друзьями, используя встроенный пакет DnD 5e!
+Или создайте свою собственную версию, используя настраиваемое программирование на основе узлов!
+</p>
+<p>
+Личный вклад - frontend developer (branch dev-ui).
+Проект на стадии разработки.
+</p>
+<p>Стэк разработки: Rust, Nuxt, tailwindcss, pinia, Docker</p>
+<p style=text-align:left;>
+<a style=margin:0px;
+href="https://github.com/justxale/aurorite.git">Ссылка на GitHub
+</a>
+</p>

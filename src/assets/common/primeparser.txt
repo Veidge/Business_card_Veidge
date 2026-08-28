@@ -1,0 +1,13 @@
+<p class="p_proj">
+Десктопное приложение для автоматизации отслеживания динамики цен на платформе warframe.market. Реализован поиск по API и добавление наиболее выгодного предложения в таблицу приложения в режиме реального времени. По каждому товару есть графики динамики цены. 
+</p>
+<p style=text-align:left;>
+<a style=margin:0px; href="https://github.com/Tenebrea/warframe-market-parser.git">
+Исходный репозиторий работы: https://github.com/Tenebrea/warframe-market-parser.git
+</a>
+</p>
+<p>Стэк разработки: Python 3.13, QT Designer</p>
+<p style=text-align:left;>
+<a style=margin:0px; href="https://github.com/Tenebrea/warframe-market-parser.git">Ссылка на GitHub
+</a>
+</p>
