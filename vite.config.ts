@@ -6,6 +6,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Business_card_Veidge/',
+
   plugins: [
     vue(),
     vueDevTools(),
