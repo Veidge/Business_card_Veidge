@@ -15,22 +15,22 @@ const linksImages = [
     isOff: true},
 
     {link: "mailto:alex.chesnokov.2007@gmail.com?body=Связи осуществляется с персонального сайта Veidge.",
-    src: "src/assets/pictures/gmail_new_logo_icon_159149.svg",
+    src: GmailLogo,
     alt: "alex.chesnokov.2007@gmail.com",
     isOff: true},
 
     {link: "https://steamcommunity.com/profiles/76561198131288506/",
-    src: "src/assets/pictures/steam_icon_135152.svg",
+    src: SteamLogo,
     alt: "https://steamcommunity.com/profiles/76561198131288506/",
     isOff: false},
 
     {link: "https://discord.com/users/760091035296333894",
-    src: "src/assets/pictures/discord_icon_130958.svg",
+    src: DiscordLogo,
     alt: "https://discord.com/users/760091035296333894",
     isOff: false},
 
     {link: "mailto:veidge.siles@yandex.ru?body=Связи осуществляется с персонального сайта Veidge.",
-    src: "src/assets/pictures/Yandex_Mail_icon.svg",
+    src: YandexMailLogo,
     alt: "veidge.siles@yandex.ru",
     isOff: true}
 ]
