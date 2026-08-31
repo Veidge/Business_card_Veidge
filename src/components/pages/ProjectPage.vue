@@ -1,55 +1,65 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import ContactsPage from './ContactsPage.vue';
+import AuroriteLogo from "@/assets/pictures/aurorite.png";
+import VeidgeLogo from "@/assets/pictures/VeidgeSilesDeShadow.png";
+import AiTGBotLogo from "@/assets/pictures/ai_pdf_logo.png";
+import WarframeParserLogo from "@/assets/pictures/warf_parser_ic.png";
+import FilmsLogo from "@/assets/pictures/films_logo.jpg";
+import DigitStartLogo from "@/assets/pictures/digit_start_logo.png";
+import CryptonitLogo from "@/assets/pictures/cryptonit_full.png";
+import WeatherParserLogo from "@/assets/pictures/weather_parser_logo.png";
+import AchievementTrackerLogo from "@/assets/pictures/achievement_tracker_logo.png";
+import SpaceshipLogo from "@/assets/pictures/shapeship_logo.png";
 
 const projectObjects = [
     {name: 'Aurorite',
-    imgSource: "/static/pictures/aurorite.png",
+    imgSource: AuroriteLogo,
     id: "aurorite",
     isCompleted: false},
 
     {name: 'Business Card (Vue)',
-    imgSource: "/static/pictures/VeidgeSilesDeShadow.png",
+    imgSource: VeidgeLogo,
     id: "vueCard",
     isCompleted: true},
 
     {name: 'AI PDF-Analyser', 
-    imgSource: "/static/pictures/ai_pdf_logo.png",
+    imgSource: AiTGBotLogo,
     id: "aiProj",
     isCompleted: true},
 
     {name: 'Prime Parser', 
-    imgSource: "/static/pictures/warf_parser_ic.png",
+    imgSource: WarframeParserLogo,
     id: "primeParser",
     isCompleted: true},
 
     {name: 'Мобильная витрина фильмов',
-    imgSource: "/static/pictures/films_logo.jpg",
+    imgSource: FilmsLogo,
     id: "films",
     isCompleted: true},
 
     {name: 'Сайт Цифровой старт',
-    imgSource: "/static/pictures/digit_start_logo.png",
+    imgSource: DigitStartLogo,
     id: "digitStart",
     isCompleted: true},
 
     {name: 'Шифратор Cryptonit',
-    imgSource: "/static/pictures/cryptonit_full.png",
+    imgSource: CryptonitLogo,
     id: "cryptonit",
     isCompleted: true},
 
     {name: 'Weather Parser', 
-    imgSource: "/static/pictures/weather_parser_logo.png",
+    imgSource: WeatherParserLogo,
     id: "weatherParser",
     isCompleted: true},
 
     {name: 'Achievement Tracker', 
-    imgSource: "/static/pictures/achievement_tracker_logo.png",
+    imgSource: AchievementTrackerLogo,
     id: "tracker",
     isCompleted: true},
     
     {name: 'Игра Spaceship', 
-    imgSource: "/static/pictures/shapeship_logo.png",
+    imgSource: SpaceshipLogo,
     id: "spaceship",
     isCompleted: true},
 ]

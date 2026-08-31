@@ -6,12 +6,19 @@ import AboutPage from './components/pages/AboutPage.vue';
 import ProjectPage from './components/pages/ProjectPage.vue';
 import ContactsPage from "@/components/pages/ContactsPage.vue";
 
+
+// const route = useRoute()
+//
+// if (route.path !== '/') {
+//     navigateTo('/')
+// }
+
 </script>
 
 <template>
   <Navbar />
   <RouterView />
-  <ContactsPage/>
+  <ContactsPage />
 </template>
 
 <style scoped>

@@ -105,6 +105,11 @@ const softSkills = [
 </template>
 
 <style scoped>
+    h2 {
+        margin-top: 1.5em;
+        padding: 0.5em;
+    }
+
     h3 {
         padding: 0em;
         margin: 0.5em;

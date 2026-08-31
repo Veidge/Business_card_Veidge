@@ -1,30 +1,36 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
+import GithubLogo from "@/assets/pictures/github_git_icon_145985.svg";
+import GmailLogo from "@/assets/pictures/gmail_new_logo_icon_159149.svg";
+import SteamLogo from "@/assets/pictures/steam_icon_135152.svg";
+import DiscordLogo from "@/assets/pictures/discord_icon_130958.svg";
+import YandexMailLogo from "@/assets/pictures/Yandex_Mail_icon.svg";
+
 
 const linksImages = [
     {link: "https://github.com/Veidge",
-    src: "/static/pictures/github_git_icon_145985.svg",
+    src: GithubLogo,
     alt: "https://github.com/Veidge",
     isOff: true},
 
     {link: "mailto:alex.chesnokov.2007@gmail.com?body=Связи осуществляется с персонального сайта Veidge.",
-    src: "/static/pictures/gmail_new_logo_icon_159149.svg",
+    src: "src/assets/pictures/gmail_new_logo_icon_159149.svg",
     alt: "alex.chesnokov.2007@gmail.com",
     isOff: true},
 
     {link: "https://steamcommunity.com/profiles/76561198131288506/",
-    src: "/static/pictures/steam_icon_135152.svg",
+    src: "src/assets/pictures/steam_icon_135152.svg",
     alt: "https://steamcommunity.com/profiles/76561198131288506/",
     isOff: false},
 
     {link: "https://discord.com/users/760091035296333894",
-    src: "/static/pictures/discord_icon_130958.svg",
+    src: "src/assets/pictures/discord_icon_130958.svg",
     alt: "https://discord.com/users/760091035296333894",
     isOff: false},
 
     {link: "mailto:veidge.siles@yandex.ru?body=Связи осуществляется с персонального сайта Veidge.",
-    src: "/static/pictures/Yandex_Mail_icon.svg",
+    src: "src/assets/pictures/Yandex_Mail_icon.svg",
     alt: "veidge.siles@yandex.ru",
     isOff: true}
 ]

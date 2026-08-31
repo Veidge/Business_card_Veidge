@@ -2,75 +2,86 @@
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-import aurorite from "../../assets/common/aurorite.txt?raw"
-import vuecard from "../../assets/common/vuecard.txt?raw"
-import aiproj from "../../assets/common/aiproj.txt?raw"
-import primeparser from "../../assets/common/primeparser.txt?raw"
-import films from "../../assets/common/films.txt?raw"
-import digitstart from "../../assets/common/digitstart.txt?raw"
-import cryptonit from "../../assets/common/cryptonit.txt?raw"
-import weatherparser from "../../assets/common/weatherparser.txt?raw"
-import tracker from "../../assets/common/tracker.txt?raw"
+import aurorite from "../../assets/common/aurorite.txt?raw";
+import vuecard from "../../assets/common/vuecard.txt?raw";
+import aiproj from "../../assets/common/aiproj.txt?raw";
+import primeparser from "../../assets/common/primeparser.txt?raw";
+import films from "../../assets/common/films.txt?raw";
+import digitstart from "../../assets/common/digitstart.txt?raw";
+import cryptonit from "../../assets/common/cryptonit.txt?raw";
+import weatherparser from "../../assets/common/weatherparser.txt?raw";
+import tracker from "../../assets/common/tracker.txt?raw";
 import spaceship from "../../assets/common/spaceship.txt?raw";
+
+import AuroriteLogo from "@/assets/pictures/aurorite-full-dark.svg";
+import VeidgeLogo from "@/assets/pictures/VeidgeSilesDeShadow.png";
+import AiTGBotLogo from "@/assets/pictures/git_ai_tg.png";
+import WarframeParserLogo from "@/assets/pictures/prime_parser_pict.png";
+import FilmsLogo from "@/assets/pictures/films_pict.jpg";
+import DigitStartLogo from "@/assets/pictures/digit_start_pict.png";
+import CryptonitLogo from "@/assets/pictures/cryptonit_pict.png";
+import WeatherParserLogo from "@/assets/pictures/weather_parser_pict.png";
+import AchievementTrackerLogo from "@/assets/pictures/achievement_trackerpng.png";
+import SpaceshipLogo from "@/assets/pictures/spaceship_pict.png";
 
 const projectLinks :Record<string, {header: string, img: string, text: string }> = {
     aurorite: {
         header: "Aurorite",
-        img: "/static/pictures/aurorite-full-dark.svg",
+        img: AuroriteLogo,
         text: aurorite
     },
 
     vueCard: {
         header: "Business Card (Vue)",
-        img: "/static/pictures/VeidgeSilesDeShadow.png",
+        img: VeidgeLogo,
         text: vuecard
     },
 
     aiProj: {
         header: "AI PDF Analyser",
-        img: "/static/pictures/git_ai_tg.png",
+        img: AiTGBotLogo,
         text: aiproj
     },
 
     primeParser: {
         header: "Prime Parser",
-        img: "/static/pictures/prime_parser_pict.png",
+        img: WarframeParserLogo,
         text: primeparser
     },
 
     films: {
         header: 'Приложение "КиноВитрина"',
-        img: "/static/pictures/films_pict.jpg",
+        img: FilmsLogo,
         text: films
     },
 
     digitStart: {
         header: 'Сайт "Цифровой старт"',
-        img: "/static/pictures/digit_start_pict.png",
+        img: DigitStartLogo,
         text: digitstart
     },
 
     cryptonit: {
         header: 'Шифратор "Cryptonit"',
-        img: "/static/pictures/cryptonit_pict.png",
+        img: CryptonitLogo,
         text: cryptonit
     },
 
     weatherParser: {
         header: "Weather Parser",
-        img: "/static/pictures/weather_parser_pict.png",
+        img: WeatherParserLogo,
         text: weatherparser
     },
 
     tracker: {
         header: "Achievement Tracker",
-        img: "/static/pictures/achievement_trackerpng.png",
+        img: AchievementTrackerLogo,
         text: tracker
     },
 
     spaceship: {
         header: "Игра Spaceship",
-        img: "/static/pictures/spaceship_pict.png",
+        img: SpaceshipLogo,
         text: spaceship
     }
 }

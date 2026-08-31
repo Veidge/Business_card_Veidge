@@ -14,7 +14,8 @@ const routes = [
     { path: "/projects", component: ProjectPage },
     { path: "/contacts", component: ContactsPage },
     { path: "/projects/:id", component: CurrentProject },
-    { path: "/skills", component: SkillsPage }
+    { path: "/skills", component: SkillsPage },
+    { path: "/Business_card_Veidge", component: AboutPage },
 
 ]
 
