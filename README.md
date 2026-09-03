@@ -36,5 +36,5 @@ npm run dev
 npm run build
 ```
 
-![This is how I work](/public/static/pictures/hedgehog_bat_1.webp)
+![This is how I work](/src/assets/pictures/hedgehog_bat_1.webp)
 
